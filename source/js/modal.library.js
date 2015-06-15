@@ -12,7 +12,7 @@ var modal = {
         me._sendRequest(url, data, function(response){
             if (response.success) {
                 me.currentContent = response.content;
-                me.initModal();
+                me._initModal();
                 trigger();
             }
         });
